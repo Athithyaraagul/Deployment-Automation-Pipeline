@@ -25,7 +25,7 @@ jobs:
         
     - name: Run Tests
       run: |
-        pytest tests/
+        python -m pytest tests/
         
   deploy-simulation:
     needs: build-and-test
